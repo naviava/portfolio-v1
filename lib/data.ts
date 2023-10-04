@@ -1,4 +1,4 @@
-import React from "react";
+import { createElement } from "react";
 
 import { FaReact } from "react-icons/fa";
 import { CgWorkAlt } from "react-icons/cg";
@@ -41,7 +41,7 @@ export const experiencesData = [
     location: "Bengaluru, India",
     description:
       "After graduation, I immediately found a job as a Systems Engineer at Accenture.",
-    icon: React.createElement(LuGraduationCap),
+    icon: createElement(LuGraduationCap),
     date: "2012 - 2013",
   },
   {
@@ -49,7 +49,7 @@ export const experiencesData = [
     location: "Abu Dhabi, UAE",
     description:
       "I worked as an IT Systems Engineer at Danat Al Emarat Hospital for just over 8 years. During my final years, IT Security, and ISO27001 adherence became my main role.",
-    icon: React.createElement(CgWorkAlt),
+    icon: createElement(CgWorkAlt),
     date: "2013 - 2021",
   },
   {
@@ -57,7 +57,7 @@ export const experiencesData = [
     location: "Bengaluru, India",
     description:
       "As a full-stack developer working as a freelancer. I've cultivated a strong skill set that includes React, Next.js, TypeScript, TailwindCSS and Prisma ORM with MongoDB, MySQL, and PostgreSQL databases. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+    icon: createElement(FaReact),
     date: "2022 - present",
   },
 ] as const;
