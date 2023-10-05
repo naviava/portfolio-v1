@@ -97,11 +97,11 @@ export const skillsData = [
   "Git",
   "TailwindCSS",
   "Prisma",
+  "Zustand",
   "MongoDB",
   "MySQL",
   "PostgreSQL",
   "Express",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;
