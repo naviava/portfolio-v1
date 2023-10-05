@@ -38,12 +38,12 @@ export default function About() {
         developer.
       </p>
       <p>
-        When I&apos;m not coding, I enjoy playing video games, content creation,
-        writing on my blog, exploring and trying different kinds of food,
-        reading a good book or listening to one on Audible. I am also keen on
-        learning <span className="font-medium">Data Science</span> and
-        eventually dive into{" "}
-        <span className="font-medium">Machine Learning</span> and{" "}
+        When I&apos;m not coding, I enjoy playing video games, watching
+        football, content creation, writing on my blog, exploring and trying
+        different kinds of food, reading a good book or listening to one on
+        Audible. I am also keen on learning{" "}
+        <span className="font-medium">Data Science</span> and eventually dive
+        into <span className="font-medium">Machine Learning</span> and{" "}
         <span className="font-medium">A.I</span>, using{" "}
         <span className="font-[600]">Python</span>.
       </p>
