@@ -8,11 +8,19 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 
+import { useSection } from "@/hooks/use-section";
+
 import myPortrait from "@/public/myPortrait.jpg";
 
 export default function Intro() {
+  const ref = useSection("Home");
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      ref={ref}
+      className="mb-28 max-w-[50rem] scroll-mt-52 text-center sm:mb-0"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div

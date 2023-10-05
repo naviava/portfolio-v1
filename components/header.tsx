@@ -1,13 +1,20 @@
 "use client";
 
-import { motion } from "framer-motion";
-
-import { links } from "@/lib/data";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
+import { useActiveSectionStore } from "@/hooks/use-active-section-store";
+
+import { cn } from "@/lib/utils";
+import { links } from "@/lib/data";
+
 export default function Header() {
+  const { activeSection, setActiveSection, setLastClicked } =
+    useActiveSectionStore();
+
   return (
-    <header className="relative z-[999]">
+    <header className="relative z-[999] scroll-mt-28">
       <motion.div
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 100 }}
@@ -24,9 +31,23 @@ export default function Header() {
             >
               <Link
                 href={link.hash}
-                className="flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-950"
+                onClick={() => {
+                  setLastClicked(Date.now());
+                  setActiveSection(link.name);
+                }}
+                className={cn(
+                  "hover:text-gray-95 relative flex w-full items-center justify-center px-3 py-3 transition",
+                  activeSection === link.name && "text-white hover:text-white",
+                )}
               >
                 {link.name}
+                {activeSection === link.name && (
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                    className="absolute inset-0 -z-10 my-2 rounded-full bg-violet-500"
+                  />
+                )}
               </Link>
             </motion.li>
           ))}

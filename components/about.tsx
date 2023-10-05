@@ -1,15 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useSection } from "@/hooks/use-section";
 import SectionHeading from "@/components/section-heading";
 
 export default function About() {
+  const ref = useSection("About");
+
   return (
     <motion.section
+      id="about"
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
     >
       <SectionHeading title="About Me" />
       <p className="mb-6">
@@ -29,8 +34,9 @@ export default function About() {
         <span className="font-[600]">React, Next.js, Node.js</span> using{" "}
         <span className="font-[600]">TypeScript</span> and{" "}
         <span className="font-[600]">MongoDB / MySQL</span>. I am also
-        well-versed with <span className="font-[600]">Prisma ORM</span>. I am
-        always looking to{" "}
+        well-versed in <span className="font-[600]">Prisma ORM</span> and{" "}
+        <span className="font-[600]">Zustand</span> for global state management.
+        I am always looking to{" "}
         <span className="italic underline">learn new technologies</span> and{" "}
         <span className="italic underline">updating myself continuously</span>.
         I am currently looking for a{" "}
