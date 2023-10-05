@@ -10,12 +10,12 @@ const animationVariants = {
   animate: (index: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: 0.05 * index },
+    transition: { delay: 0.02 * index },
   }),
 };
 
 export default function Skills() {
-  const { ref } = useSection("Skills");
+  const ref = useSection("Skills");
 
   return (
     <section

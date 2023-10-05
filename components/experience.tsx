@@ -13,7 +13,7 @@ import SectionHeading from "@/components/section-heading";
 import { experiencesData } from "@/lib/data";
 
 export default function Experience() {
-  const { ref } = useSection("Experience", 0.5);
+  const ref = useSection("Experience", 0.5);
 
   return (
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
