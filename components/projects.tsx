@@ -10,7 +10,7 @@ import SectionHeading from "@/components/section-heading";
 import { projectsData } from "@/lib/data";
 
 export default function Projects() {
-  const ref = useSection("Projects", 0.4);
+  const { ref } = useSection("Projects", 0.4);
 
   return (
     <section id="projects" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">

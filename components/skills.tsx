@@ -15,7 +15,7 @@ const animationVariants = {
 };
 
 export default function Skills() {
-  const ref = useSection("Skills");
+  const { ref } = useSection("Skills");
 
   return (
     <section

@@ -2,6 +2,7 @@ import Intro from "@/components/intro";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
+import Experience from "@/components/experience";
 import SectionDivider from "@/components/section-divider";
 
 export default function LandingPage() {
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <About />
       <Projects />
       <Skills />
+      <Experience />
     </main>
   );
 }

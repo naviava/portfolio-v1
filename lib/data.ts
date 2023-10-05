@@ -40,7 +40,7 @@ export const experiencesData = [
     title: "Systems Engineer",
     location: "Bengaluru, India",
     description:
-      "After graduation, I immediately found a job as a Systems Engineer at Accenture.",
+      "After graduating as an Information Science Engineer, I immediately found a job at Accenture.",
     icon: createElement(LuGraduationCap),
     date: "2012 - 2013",
   },
@@ -48,7 +48,7 @@ export const experiencesData = [
     title: "IT Systems Engineer",
     location: "Abu Dhabi, UAE",
     description:
-      "I worked as an IT Systems Engineer at Danat Al Emarat Hospital for just over 8 years. During my final years, IT Security, and ISO27001 adherence became my main role.",
+      "I worked at Danat Al Emarat Hospital for just over 8 years. During my final years, IT Security, and ISO27001 adherence became my main role.",
     icon: createElement(CgWorkAlt),
     date: "2013 - 2021",
   },
@@ -56,7 +56,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Bengaluru, India",
     description:
-      "As a full-stack developer working as a freelancer. I've cultivated a strong skill set that includes React, Next.js, TypeScript, TailwindCSS and Prisma ORM with MongoDB, MySQL, and PostgreSQL databases. I'm open to full-time opportunities.",
+      "As a full-stack developer working as a freelancer, I've cultivated a strong skill set that includes React, Next.js, TypeScript, TailwindCSS and Prisma ORM with MongoDB, MySQL, and PostgreSQL databases. I'm open to full-time opportunities.",
     icon: createElement(FaReact),
     date: "2022 - present",
   },

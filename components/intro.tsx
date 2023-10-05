@@ -13,7 +13,7 @@ import { useSection } from "@/hooks/use-section";
 import myPortrait from "@/public/myPortrait.jpg";
 
 export default function Intro() {
-  const ref = useSection("Home");
+  const { ref } = useSection("Home");
 
   return (
     <section
