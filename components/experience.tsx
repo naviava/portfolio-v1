@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import "react-vertical-timeline-component/style.min.css";
 import {
   VerticalTimeline,
@@ -13,6 +14,7 @@ import SectionHeading from "@/components/section-heading";
 import { experiencesData } from "@/lib/data";
 
 export default function Experience() {
+  const { theme } = useTheme();
   const ref = useSection("Experience", 0.5);
 
   return (
@@ -23,23 +25,31 @@ export default function Experience() {
           <VerticalTimelineElement
             key={idx}
             contentStyle={{
-              backgroundColor: "#f3f4f6",
+              backgroundColor:
+                theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
               boxShadow: "none",
               border: "1px solid rgba(0, 0, 0, 0.05)",
               textAlign: "left",
               padding: "1.3rem 2rem",
             }}
-            contentArrowStyle={{ borderRight: "0.5rem solid #9ca3af" }}
+            contentArrowStyle={{
+              borderRight:
+                theme === "light"
+                  ? "0.5rem solid #9ca3af"
+                  : "0.5rem solid rgba(255, 255, 255, 0.5)",
+            }}
             date={item.date}
             icon={item.icon}
             iconStyle={{
-              background: "white",
-              color: "#696666",
+              background: theme === "light" ? "white" : "#343a47",
+              color: theme === "light" ? "#696666" : "rgba(255, 255, 255, 0.7)",
             }}
           >
             <h3 className="font-semibold capitalize">{item.title}</h3>
             <p className="!mt-1 !text-sm !font-normal">{item.location}</p>
-            <p className="!font-normal text-gray-700">{item.description}</p>
+            <p className="!font-normal text-gray-700 dark:text-white/75">
+              {item.description}
+            </p>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

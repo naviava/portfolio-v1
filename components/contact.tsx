@@ -79,7 +79,7 @@ export default function Contact() {
       className="mb-28 scroll-mt-28 sm:mb-40"
     >
       <SectionHeading title="Contact me" />
-      <p className="-mt-6 text-center text-gray-700">
+      <p className="-mt-6 text-center text-gray-700 dark:text-gray-200">
         You can contact me directly at{" "}
         <a href="mailto:knavinavadhani@gmail.com" className="underline">
           knavinavadhani@gmail.com
@@ -97,9 +97,13 @@ export default function Contact() {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Your email address" {...field} />
+                  <Input
+                    placeholder="Your email address"
+                    {...field}
+                    className="dark:bg-white/20"
+                  />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="dark:text-rose-500" />
               </FormItem>
             )}
           />
@@ -112,10 +116,10 @@ export default function Contact() {
                   <Textarea
                     placeholder="Write your message here"
                     {...field}
-                    className="min-h-[15rem]"
+                    className="min-h-[15rem] dark:bg-white/20"
                   />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="dark:text-rose-500" />
               </FormItem>
             )}
           />

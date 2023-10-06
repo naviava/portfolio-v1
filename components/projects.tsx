@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
       <SectionHeading title="My Projects" />
-      <div className="space-y-3 sm:space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         {projectsData.map((project, idx) => (
           <Fragment key={idx}>
             <ProjectItem {...project} />

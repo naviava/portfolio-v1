@@ -64,25 +64,33 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Fondingo",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "TypeScript", "MySQL", "TailwindCSS", "Prisma"],
-    image: fondingoImg,
-  },
-  {
     title: "Academix LMS",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "TypeScript", "MySQL", "TailwindCSS", "Prisma"],
+      "A learning management system, where users can create or enroll for courses. Has a robust admin panel and progress tracking functionality for each course.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "MySQL",
+      "TailwindCSS",
+      "Prisma",
+      "Stripe",
+    ],
     image: academixImg,
   },
   {
     title: "Vacation Haven",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "An AirBnB clone, where users can add properties, mark favorites, make reservations and manage reservations for their owned properties.",
     tags: ["React", "Express", "TailwindCSS", "MongoDB"],
     image: vacationHavenImg,
+  },
+  {
+    title: "Fondingo",
+    description:
+      "I didn't want to use another blog site to write articles, so I made my own. Includes a custom built Headless CMS which is not public facing. This is a live website with additional features planned in the future.",
+    tags: ["React", "Next.js", "TypeScript", "MySQL", "TailwindCSS", "Prisma"],
+    image: fondingoImg,
   },
 ] as const;
 
