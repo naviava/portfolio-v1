@@ -82,7 +82,15 @@ export const projectsData = [
     title: "Vacation Haven",
     description:
       "An AirBnB clone, where users can add properties, mark favorites, make reservations and manage reservations for their owned properties.",
-    tags: ["React", "Express", "TailwindCSS", "MongoDB"],
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "TailwindCSS",
+      "Next-Auth",
+      "Prisma",
+    ],
     image: vacationHavenImg,
   },
   {
