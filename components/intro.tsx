@@ -6,10 +6,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { FaSquareXTwitter, FaHashnode } from "react-icons/fa6";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 
 import { useSection } from "@/hooks/use-section";
 import { useActiveSectionStore } from "@/hooks/use-active-section-store";
+
+import { SocialLink } from "@/components/social-link";
 
 import myPortrait from "@/public/myPortrait.jpg";
 
@@ -91,20 +94,30 @@ export default function Intro() {
           <HiDownload className="opacity-60 transition group-hover:animate-bounce group-hover:text-emerald-600 dark:group-hover:text-emerald-400" />
         </a>
         <div className="flex gap-4">
-          <a
-            href="https://www.linkedin.com/in/navin-avadhani-aa288785/"
-            target="_blank"
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-600 transition hover:scale-[1.15] hover:text-[#0072b1] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-gray-50 dark:hover:text-[#6baed2]"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://github.com/naviava"
-            target="_blank"
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-[0.9rem] text-[1.35rem] text-gray-600 transition hover:scale-[1.15] hover:text-[#171515] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-gray-50 dark:hover:text-[#c9c4c4]"
-          >
-            <FaGithubSquare />
-          </a>
+          <SocialLink
+            icon={FaGithubSquare}
+            label="GitHub"
+            url="https://github.com/naviava"
+            className="text-[1.35rem] hover:text-[#171515] dark:hover:text-[#c9c4c4]"
+          />
+          <SocialLink
+            icon={BsLinkedin}
+            label="LinkedIn"
+            url="https://www.linkedin.com/in/navin-avadhani-aa288785"
+            className="hover:text-[#0072b1] dark:hover:text-[#6baed2]"
+          />
+          <SocialLink
+            icon={FaSquareXTwitter}
+            label="X (Twitter)"
+            url="https://twitter.com/oldmannav"
+            className="text-[1.3rem] hover:text-neutral-900 dark:hover:text-neutral-900"
+          />
+          <SocialLink
+            icon={FaHashnode}
+            label="Hashnode Blog"
+            url="https://naviava.hashnode.dev"
+            className="text-[1.3rem] hover:text-[#2962FF] dark:hover:text-[#2962FF]"
+          />
         </div>
       </motion.div>
     </section>
