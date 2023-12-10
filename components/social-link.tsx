@@ -32,7 +32,7 @@ export function SocialLink({ icon: Icon, label, url, className }: Props) {
             <Icon />
           </a>
         </TooltipTrigger>
-        <TooltipContent side="bottom">
+        <TooltipContent side="bottom" className="dark:bg-neutral-700">
           <p>{label}</p>
         </TooltipContent>
       </Tooltip>
