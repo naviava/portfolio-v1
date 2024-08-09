@@ -14,7 +14,7 @@ import { useActiveSectionStore } from "@/hooks/use-active-section-store";
 
 import { SocialLink } from "@/components/social-link";
 
-import myPortrait from "@/public/myPortrait.jpg";
+import { myPortrait } from "@/public/images";
 
 export default function Intro() {
   const ref = useSection("Home");

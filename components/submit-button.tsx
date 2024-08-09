@@ -13,7 +13,7 @@ export default function SubmitButton({ isSubmitting }: SubmitButtonProps) {
       type="submit"
       disabled={isSubmitting}
       className={cn(
-        "group !mt-[1.5rem] flex h-[3rem] w-full items-center justify-center gap-2 rounded-full bg-gray-800 text-white outline-none transition-all sm:w-[8rem]",
+        "group mx-auto !mt-[1.5rem] flex h-[3rem] w-full items-center justify-center gap-2 rounded-full bg-gray-800 text-white outline-none transition-all sm:w-[8rem]",
         !isSubmitting &&
           "hover:bg-gray-950 active:scale-95 dark:hover:bg-gray-800/80",
       )}
