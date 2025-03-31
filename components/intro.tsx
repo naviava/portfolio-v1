@@ -9,8 +9,8 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter, FaHashnode } from "react-icons/fa6";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 
-import { useSection } from "@/hooks/use-section";
 import { useActiveSectionStore } from "@/hooks/use-active-section-store";
+import { useSection } from "@/hooks/use-section";
 
 import { SocialLink } from "@/components/social-link";
 
@@ -54,7 +54,7 @@ export default function Intro() {
             }}
             className="absolute bottom-0 right-0 text-3xl"
           >
-            🤘
+            🚀
           </motion.span>
         </div>
       </div>
@@ -63,10 +63,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span className="font-bold">Hello, I&apos;m Navin.</span> I&apos;m a{" "}
-        <span className="font-bold">Full-Stack Web Developer</span>, who loves
-        building <span className="italic">websites & apps</span>, using{" "}
-        <span className="font-bold italic underline">React & NextJS</span>.
+        <span className="font-bold">Hi, I’m Navin Avadhani.</span> I’m a{" "}
+        <span className="font-bold">Full-Stack Software Engineer</span> with
+        over <span className="font-bold">10 years of IT experience</span>,
+        specializing in{" "}
+        <span className="italic">scalable web applications</span>. I craft
+        reliable, innovative solutions using{" "}
+        <span className="font-bold underline">React and TypeScript</span>.
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -82,16 +85,16 @@ export default function Intro() {
           }}
           className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
         >
-          Contact me
-          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
+          Get in Touch
+          <BsArrowRight className="shrink-0 opacity-70 transition group-hover:translate-x-1" />
         </Link>
         <a
           href="/CV.pdf"
           download
           className="group flex cursor-pointer select-none items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 transition group-hover:animate-bounce group-hover:text-emerald-600 dark:group-hover:text-emerald-400" />
+          Download Resume{" "}
+          <HiDownload className="shrink-0 opacity-60 transition group-hover:animate-bounce group-hover:text-emerald-600 dark:group-hover:text-emerald-400" />
         </a>
         <div className="flex gap-4">
           <SocialLink

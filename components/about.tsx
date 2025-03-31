@@ -14,44 +14,55 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
+      className="mb-28 max-w-[45rem] scroll-mt-28 text-justify leading-8 sm:mb-40"
     >
       <SectionHeading title="About Me" />
       <p className="mb-6">
-        I have a bachelor&apos;s degree in{" "}
-        <span className="font-[600]">Information Science and Engineering</span>{" "}
-        and <span className="font-[600]">9 years</span> of experience in{" "}
-        <span className="font-medium">IT Security and Systems Management</span>.
-        After being away from home for so long, I decided to return and pursue
-        my passion of getting into programming.{" "}
-        <span className="italic underline">
-          I love the feeling of problem-solving using logic
+        I&apos;m a{" "}
+        <span className="font-[600]">Full-Stack Software Engineer</span> with
+        over <span className="font-[600]">10 years of IT experience</span>,
+        transitioning from{" "}
+        <span className="font-medium">IT systems and security leadership</span>{" "}
+        to building{" "}
+        <span className="italic">scalable, user-focused web applications</span>.
+        I hold a{" "}
+        <span className="font-[600]">
+          B.E. in Information Science & Engineering
+        </span>{" "}
+        and an <span className="font-[600]">MBA Global</span>, blending
+        technical expertise with a strategic mindset. At{" "}
+        <span className="font-medium">Danat Al Emarat Hospital</span>, I was a
+        key member of the founding IT team, shaping its infrastructure from the
+        ground up into a public success story—overseeing everything from data
+        center deployment to achieving ADHICS compliance (akin to ISO27001) on
+        the first audit.
+      </p>
+      <p className="mb-6">
+        Today, I specialize in crafting{" "}
+        <span className="font-medium">reliable, innovative solutions</span>{" "}
+        using modern tools like{" "}
+        <span className="font-[600]">React and TypeScript</span>, alongside
+        backend technologies such as{" "}
+        <span className="font-[600]">
+          Node.js, SQL, MongoDB, Redis, and Kafka
         </span>
-        . It gives a sort of happiness that is{" "}
-        <span className="italic">unparalleled</span>. The tech stacks I learned
-        during my time in college were outdated, so I decided to learn React and
-        fell in love instantly. My core stack is{" "}
-        <span className="font-[600]">React, Next.js, Node.js</span> using{" "}
-        <span className="font-[600]">TypeScript</span> and{" "}
-        <span className="font-[600]">MongoDB / MySQL</span>. I am also
-        well-versed in <span className="font-[600]">Prisma ORM</span> and{" "}
-        <span className="font-[600]">Zustand</span> for global state management.
-        I am always looking to{" "}
-        <span className="italic underline">learn new technologies</span> and{" "}
-        <span className="italic underline">updating myself continuously</span>.
-        I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . Whether it&apos;s streamlining expense tracking for groups, building
+        blockchain-based NFT platforms, or designing secure ticketing systems, I
+        thrive on turning complex challenges into intuitive, high-performing
+        applications. I&apos;m passionate about staying ahead of the curve,
+        continuously{" "}
+        <span className="italic underline">
+          adapting to emerging technologies
+        </span>{" "}
+        to deliver cutting-edge results.
       </p>
       <p>
-        When I&apos;m not coding, I enjoy playing video games, watching
-        football, content creation, writing on my blog, exploring and trying
-        different kinds of food, reading a good book or listening to one on
-        Audible. I am also keen on learning{" "}
-        <span className="font-medium">Data Science</span> and eventually dive
-        into <span className="font-medium">Machine Learning</span> and{" "}
-        <span className="font-medium">A.I</span>, using{" "}
-        <span className="font-[600]">Python</span>.
+        Beyond coding, I&apos;m an avid problem-solver who enjoys exploring new
+        cuisines, diving into a good book, and cheering on my favorite football
+        teams. I&apos;m excited to bring my skills to a{" "}
+        <span className="font-medium">full-time role</span> or{" "}
+        <span className="font-medium">freelance projects</span>, delivering
+        impactful solutions that drive success for businesses and users alike.
       </p>
     </motion.section>
   );
